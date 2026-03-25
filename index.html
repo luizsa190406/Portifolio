@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Carlos A. e Sá | Unicamp | Cibersegurança & IoT</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #00ff00;
+            --accent-color: #008000;
+            --card-bg: #0a0a0a;
+            --border-color: #333333;
+            --glitch-color: #005f00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            border: 1px solid var(--text-color);
+            background: linear-gradient(180deg, rgba(0,255,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            margin-bottom: 2rem;
+        }
+
+        .profile-pic-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--text-color);
+            box-shadow: 0 0 15px var(--accent-color);
+        }
+
+        .profile-pic-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) brightness(80%);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .university-info {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            border-left: 2px solid var(--text-color);
+            padding-left: 1.5rem;
+        }
+
+        h2 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        .skills {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--text-color);
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: var(--text-color);
+            transform: scale(1.02);
+            box-shadow: 0 0 10px var(--glitch-color);
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--text-color);
+            color: #000;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--text-color);
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-pic-container">
+            <img src="perfil.jpg" alt="Foto de Perfil de Luiz Carlos">
+        </div>
+
+        <h1>LUÍZ SÁ</h1>
+        <p class="university-info">>_ COMPUTAÇÃO @ UNICAMP</p>
+        <p class="subtitle">[ Foco: Cibersegurança, Baixo Nível & IoT ]</p>
+        
+        <a href="https://github.com/luizsa190406" target="_blank" class="btn">_EXEC_GITHUB_PROFILE</a>
+    </header>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>0x01_Sobre</h2>
+            <p>
+                Estudante de Computação (TADS) na Unicamp e Técnico em Eletrônica. Meu perfil técnico é construído na intersecção entre software e hardware.
+            </p>
+            <br>
+            <p>
+                Com experiência prática no desenvolvimento de soluções em IoT (Internet das Coisas), busco desconstruir problemas complexos desde a arquitetura do circuito até o nível do sistema operacional, com forte foco em segurança e alta performance.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>0x02_Stack</h2>
+            <div class="skills">
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Eletrônica</span>
+                <span class="skill-tag">IoT / Hardware</span>
+                <span class="skill-tag">Linux_Kernel</span>
+                <span class="skill-tag">Cibersegurança</span>
+                <span class="skill-tag">Reverse_Eng</span>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>0x03_Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Segurança_e_Criptografia</h3>
+                    <p>Implementação de algoritmos de baixo nível e análise de vulnerabilidades de sistemas.</p>
+                    <a href="#" class="btn btn-outline">_VIEW_REPO</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Automação_IoT_e_Hardware</h3>
+                    <p>Projetos envolvendo microcontroladores, sensores e integração de hardware com sistemas web.</p>
+                    <a href="#" class="btn btn-outline">_VIEW_REPO</a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Algoritmos_Alta_Performance</h3>
+                    <p>Estruturas de dados otimizadas e scripts focados no uso eficiente de memória em C/C++.</p>
+                    <a href="#" class="btn btn-outline">_VIEW_REPO</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>TERMINAL_PORTFOLIO v1.1 | L.C.A.S. | [2026] </p>
+    </footer>
+
+</body>
+</html>
